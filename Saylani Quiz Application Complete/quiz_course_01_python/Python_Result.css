@@ -1,0 +1,53 @@
+.results-container {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 1rem;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.student_name {
+  color: #0d6db7;
+}
+
+.student_name_red {
+  color: red;
+}
+
+.box {
+  display: inline-block;
+}
+
+.progress {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.progress > .inner {
+  position: absolute;
+  color: #0d6db7;
+}
+
+.progress > svg {
+  height: 100%;
+  display: block;
+}
+
+.inner {
+  font-size: 2.5rem;
+  color: #0d6db7;
+}
+
+.box {
+  width: 100%;
+  margin-top: 4rem;
+}

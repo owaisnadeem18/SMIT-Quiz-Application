@@ -1,0 +1,51 @@
+/* importing the font family */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+button {
+  background-color: rgb(14, 13, 13);
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(59, 57, 57);
+  cursor: pointer;
+}
+
+.logOut_class {
+  cursor: pointer;
+}
+
+.mini-container-of-body {
+  padding: 2rem 0 0 0;
+}
+
+.mini-container-of-body h1 {
+  color: #0d6db7;
+  font-weight: 300 !important;
+}
+
+.mini-container-of-body p {
+  font-weight: 400;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 2rem 4rem;
+  height: 30vh;
+}
+
+.card-body .btn {
+  color: #0d6db7;
+  background-color: rgb(255, 255, 255);
+}

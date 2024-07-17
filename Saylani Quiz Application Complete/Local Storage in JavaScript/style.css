@@ -1,0 +1,62 @@
+/* Importing google font ( Josefin-Sans ) */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.big-box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2.5rem;
+}
+
+.navbar-smit {
+  display: flex;
+  align-items: center;
+  height: 80px !important;
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
+  z-index: 2000;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-smit .img img {
+  width: 100px;
+}
+
+.navbar-smit .name span {
+  color: #0d6db7;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.heading-intro {
+  width: 70%;
+  margin: 40px auto;
+  text-align: center;
+  color: #0d6db7;
+}
+
+.decrease-width {
+  width: 40% !important;
+  margin: auto;
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+}
+
+.decrease-width form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

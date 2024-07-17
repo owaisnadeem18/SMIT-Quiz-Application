@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMIT Quiz App Sign In</title>
+
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.freepik.com/512/3874/3874176.png"
+      type="image/x-icon"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <nav class="navbar-smit">
+      <div class="container navbar-header">
+        <div class="img">
+          <img src="https://quiz.saylaniwelfare.com/images/smit.png" alt="" />
+        </div>
+        <!-- <div class="name" id="user"> -->
+        <!-- User name with log out button -->
+        <!-- <span id="user-name"></span>
+          <i class="fa-solid fa-play"></i>
+        </div> -->
+        <div id="log-out">
+          <button id="LogOut" class="logOut_class" onclick="logOut()">
+            Log Out
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Starting body container of smit quiz app -->
+
+    <div class="container">
+      <div class="row mini-container-of-body">
+        <h1 id="name_of_user">Hi !</h1>
+        <p>
+          Welcome to the SMIT's quiz portal. Select your course below to take a
+          quiz.
+        </p>
+        <hr />
+      </div>
+
+      <div class="row">
+        <!-- Quiz Course # 01 -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Python</h4>
+              <h6 class="card-subtitle mb-2 text-muted">1 Subject</h6>
+              <button class="btn btn-primary" id="python" onclick="python()">
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Web and App Crash Course</h4>
+              <h6 class="card-subtitle mb-2 text-muted">2 Subjects</h6>
+              <button
+                id="crashCourse"
+                class="btn btn-primary"
+                onclick="crashCourse()"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Web & App Development(Madaris)</h4>
+              <h6 class="card-subtitle mb-2 text-muted">2 Subjects</h6>
+              <button
+                class="btn btn-primary incompleted"
+                onclick="inComplete()"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">TypeScript</h4>
+              <h6 class="card-subtitle mb-2 text-muted">1 Subjects</h6>
+              <button
+                class="btn btn-primary incompleted"
+                onclick="inComplete()"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Web And Mobile Hybrid App Develpment</h4>
+              <h6 class="card-subtitle mb-2 text-muted">4 Subjects</h6>
+              <button
+                class="btn btn-primary incompleted"
+                onclick="inComplete()"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Module-1 Exam</h4>
+              <h6 class="card-subtitle mb-2 text-muted">3 Subjects</h6>
+              <button
+                class="btn btn-primary incompleted"
+                onclick="inComplete()"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Web & App Rangers</h4>
+              <h6 class="card-subtitle mb-2 text-muted">3 Subjects</h6>
+              <button
+                class="btn btn-primary incompleted"
+                onclick="inComplete()"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Generative AI & Chatbot Batch-3</h4>
+              <h6 class="card-subtitle mb-2 text-muted">1 Subjects</h6>
+              <button
+                class="btn btn-primary incompleted"
+                onclick="inComplete()"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">CCO</h4>
+              <h6 class="card-subtitle mb-2 text-muted">1 Subjects</h6>
+              <button
+                class="btn btn-primary incompleted"
+                onclick="inComplete()"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Web & Mobile App (ASF)</h4>
+              <h6 class="card-subtitle mb-2 text-muted">3 Subjects</h6>
+              <button
+                class="btn btn-primary incompleted"
+                onclick="inComplete()"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ending body container of smit quiz app -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../quiz_course_01_python/app.js"></script>
+    <script src="../quiz_course_02_crash_couse_Web_App/app.js"></script>
+    <script src="dashboard.js"></script>
+    <script>
+      function inComplete() {
+        Swal.fire({
+          icon: "warning",
+          title:
+            " Only Python & Web App Crash Course Quizes are Open Right Now. Please Check them ! ",
+        });
+      }
+    </script>
+  </body>
+</html>

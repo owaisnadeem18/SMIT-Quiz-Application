@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage In JavaScript</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.freepik.com/512/3874/3874176.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar-smit">
+      <div class="container navbar-header">
+        <div class="img">
+          <img src="https://quiz.saylaniwelfare.com/images/smit.png" alt="" />
+        </div>
+        <div class="name">
+          <span>V 0.1 BETA </span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="heading-intro">
+      <h3>Sign Up & Create Your Account</h3>
+    </div>
+
+    <div class="container my-5 big-box">
+      <form onsubmit="registration_Form()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"
+            >Full Name</label
+          >
+          <input type="text" class="form-control" id="form_name" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"
+            >Phone Number</label
+          >
+          <input type="number" class="form-control" id="phone_number" />
+        </div>
+
+        <div class="row">
+          <div class="mb-3 col-md-6">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input type="password" class="form-control" id="Password" />
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="exampleInputPassword1" class="form-label"
+              >Confirm Password</label
+            >
+            <input type="password" class="form-control" id="Confirm_Password" />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </div>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
